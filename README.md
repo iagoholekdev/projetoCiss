@@ -1,4 +1,4 @@
-# Projeto destinado a Ciss 
+# Projeto CRUD
 
 ## Clique na imagem para abrir o vídeo demonstrativo.
 
