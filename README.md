@@ -1,6 +1,6 @@
 # Projeto destinado a Ciss 
 
-## Clique na imagem para abrir vídeo demonstrativo.
+## Clique na imagem para abrir o vídeo demonstrativo.
 
 [![CRUD](https://www.atatus.com/glossary/content/images/size/w960/2021/07/CRUD.jpeg)](https://www.youtube.com/watch?v=v8VAH2FnjlA "Everything Is AWESOME")
 
