@@ -8,11 +8,11 @@ da idéia ser bem simples, o front-end também acaba atrasando um pouco.
 e para ela, pois ganha um grande conhecimento fazendo esses sistemas back e front-end.
 
 
-obs: caso de erros de dependencias, rodar um **yarn install** em ambos os projetos.
-Para buildar o front:
-abrir o terminal no projeto, cd front
-Verificar se o seu node está nas versões mais atuais e então dar um **yarn start**
-Para buildar o back-end
+obs: caso de erros de dependencias, rodar um **yarn install** em ambos os projetos. <br>
+**Para buildar o front: **<br>
+abrir o terminal no projeto, cd front <br>
+Verificar se o seu node está nas versões mais atuais e então dar um **yarn start** <br>
+**Para buildar o back-end **<br>
 Abrir o terminal no projet: **cd api** e rodar **node index.js** ou **yarn dev**
 ## DETALHE: Utilizei um banco mySql usando o Dbeaver para gravar os dados, então a configuração fica a seu critério, ou configurar um conforme está no index.js
 
