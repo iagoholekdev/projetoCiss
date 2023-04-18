@@ -30,7 +30,7 @@ export default function FormDialog(props) {
 
   const handleEditEmployee = () => {
     debugger;
-    Axios.put("http://localhost:8080/editEmployee", {
+    Axios.put("http://localhost:8080/updateEmployee", {
       id: editValues.id,
       Nome: editValues.Nome,
       Sobrenome: editValues.Sobrenome,

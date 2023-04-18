@@ -1,6 +1,6 @@
 
 class employeeDAO {
-  insertEmployee(data, database, sql) {
+  createEmployee(data, database, sql) {
     database.query(sql, 
         [data.name, data.surname, data.email, data.nis]    
     );
@@ -16,21 +16,14 @@ class employeeDAO {
   }
 
 
- // getEmployees(database){
-   // database.query('SELECT * FROM funcionario', (function(err, results, rows)  {
-     //   const jsonData = JSON.parse(JSON.stringify(results));
-      //  console.log(jsonData)
-   // }));
 
-  //  console.log("getEmployees")
- // }
 
   alterEmployees(data, database, sql){
-
+   /* TODO /** */
   }
 
   deleteEmployees(data, database, sql){
-  
+     /* TODO /** */
  }
 }
 module.exports = employeeDAO;

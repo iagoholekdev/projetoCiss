@@ -20,13 +20,13 @@ function App() {
   };
 
   const handleGetButton = () => {
-    Axios.get('http://localhost:8080/getEmployee').then((response) => {
+    Axios.get('http://localhost:8080/readEmployee').then((response) => {
       setListEmployees(response.data);
     })
   }
 
   useEffect(() => {
-    Axios.get('http://localhost:8080/getEmployee').then((response) => {
+    Axios.get('http://localhost:8080/readEmployee').then((response) => {
         setListEmployees(response.data)
     })
 }, [listEmployees])
@@ -35,7 +35,7 @@ function App() {
     const handleClickButton = () =>
     {
 
-      Axios.post('http://localhost:8080/insertEmployee', {
+      Axios.post('http://localhost:8080/createEmployee', {
         name: values.name,
         surname: values.surname,
         mail: values.mail,

@@ -28,7 +28,7 @@ validateNis(nis){
 
 }
 
-insertEmployee(reqBody, database){
+createEmployee(reqBody, database){
     console.log(reqBody)
     let data = {'name' : reqBody.name,
                 'surname' : reqBody.surname,
@@ -39,7 +39,7 @@ insertEmployee(reqBody, database){
     this.validateEmail(data.email);
     this.validateNis(data.nis);
     let sql = "INSERT INTO funcionario (Nome, Sobrenome, Email, NIS) VALUES (?,?,?,?)";
-    employeeDAOInstance.insertEmployee(data, database, sql);
+    employeeDAOInstance.createEmployee(data, database, sql);
 }
  async getEmployees(database){
      const employee = employeeDAOInstance.getEmployees(database);

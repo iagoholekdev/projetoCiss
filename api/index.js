@@ -16,9 +16,9 @@ const employeControllerInstance = new employeeController();
 app.use(cors());
 app.use(express.json());
 
-app.post("/insertEmployee", (req, res) => {
+app.post("/createEmployee", (req, res) => {
     try {
-      employeControllerInstance.insertEmployee(req.body, database);
+      employeControllerInstance.createEmployee(req.body, database);
       res.send("Funcionário cadastrado com sucesso!");
     } catch (error) {
       res.send(error);
@@ -26,7 +26,7 @@ app.post("/insertEmployee", (req, res) => {
    }
 );
 
-app.get("/getEmployee", (req, res) => {
+app.get("/readEmployee", (req, res) => {
     let sql = "SELECT * FROM funcionario";
 
     database.query(sql, (err, result) => {
@@ -35,7 +35,7 @@ app.get("/getEmployee", (req, res) => {
     });
 });
 
-app.put("/editEmployee", (req, res) => {
+app.put("/updateEmployee", (req, res) => {
     const {id} = req.body;
     const {Nome} = req.body;
     const {Sobrenome} = req.body;
