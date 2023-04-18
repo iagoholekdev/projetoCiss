@@ -1,0 +1,18 @@
+.app-container {
+  display:left;
+  align-items:center;
+  flex-direction: column;
+  border: 3px solid black;
+  font-family: monospace;
+  width:max-content;
+  height: max-content;
+}
+
+.input-employee {
+  display: block;
+  font-family: monospace;
+
+}
+
+
+
