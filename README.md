@@ -21,3 +21,17 @@ Verificar se o seu node está nas versões mais atuais e então dar um **yarn st
 Abrir o terminal no projet: **cd api** e rodar **node index.js** ou **yarn dev**
 ## DETALHE: Utilizei um banco mySql usando o Dbeaver para gravar os dados, então a configuração fica a seu critério, ou configurar um conforme está no index.js
 
+
+
+**DDL da tabela:**
+```sql
+CREATE TABLE `funcionario` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `Nome` varchar(30) DEFAULT NULL,
+  `Sobrenome` varchar(50) DEFAULT NULL,
+  `email` varchar(90) DEFAULT NULL,
+  `NIS` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
+) 
+```
