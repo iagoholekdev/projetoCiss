@@ -1,11 +1,16 @@
 # Projeto destinado a Ciss 
-Criar um **CRUD** (com front-end opcional) de um cadastro de funcionário, tive 5 dias para realizar está atividade.
-Pensei em uma estrutura MVC (Model-view-Controller) com um DAO para realizar as atividades em banco, com o sequelizer para montar a estrutura do banco.
-Consegui montar a estrutura com a idéia porém 5 dias não é tanto tempo para realizar um CRUD completo, apesar
-da idéia ser bem simples, o front-end também acaba atrasando um pouco.
 
-**Tive** a ideia de se caso eu passar no teste, dar continuidade a este projeto caso a empresa ache algo bom para mim
-e para ela, pois ganha um grande conhecimento fazendo esses sistemas back e front-end.
+## Clique na imagem para abrir vídeo demonstrativo.
+
+[![CRUD](https://www.atatus.com/glossary/content/images/size/w960/2021/07/CRUD.jpeg)](https://www.youtube.com/watch?v=v8VAH2FnjlA "Everything Is AWESOME")
+
+Criar um **CRUD** (com front-end opcional) de um cadastro de funcionário, tive 5 dias para realizar está atividade.
+Pensei em uma estrutura MVC (Model-view-Controller) com um DAO para realizar as atividades em banco, com o sequelizer para criação de tabelas no banco.
+Consegui montar a estrutura com a idéia porém 5 dias e mais semana de prova não foi o bastante para a implementação de um CRUD completo, apesar
+da idéia ser bem simples, o front-end também acaba atrasando um pouco porém achei necessário fazer algo básico para que seja interativo.
+
+**Tive** a ideia de se caso eu passar no teste, dar continuidade a este projeto, caso a empresa ache que vai ser algo bom para mim
+e para ela, pois é adquirido um grande conhecimento fazendo esses sistemas back e front-end.
 
 
 obs: caso de erros de dependencias, rodar um **yarn install** em ambos os projetos. <br>
