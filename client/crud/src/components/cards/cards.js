@@ -1,9 +1,9 @@
 import React from "react";
 import "./cards.css"
-import FormDialog from "../dialog/dialog";
+import FormDialog from "../dialog/FormDialog";
 
 export default function Card(props){
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = React.useState(true);
     
     return( 
     <>
@@ -15,7 +15,7 @@ export default function Card(props){
         email={props.email}
         NIS={props.NIS}
         listEmployee={props.listEmp}
-        setListEmployee={props.setListEmployees}
+        setListEmp={props.setListEmployees}
         id={props.id}
       />
         

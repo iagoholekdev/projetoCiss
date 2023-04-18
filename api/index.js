@@ -35,7 +35,7 @@ app.get("/getEmployee", (req, res) => {
     });
 });
 
-app.post("/editEmployee", (req, res) => {
+app.put("/editEmployee", (req, res) => {
     const {id} = req.body;
     const {Nome} = req.body;
     const {Sobrenome} = req.body;

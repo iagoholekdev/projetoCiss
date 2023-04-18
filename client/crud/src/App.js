@@ -27,6 +27,12 @@ function App() {
     })
   }
 
+  useEffect(() => {
+    Axios.get("http://localhost:3001/getCards").then((response) => {
+      setListEmployees(response.data);
+    });
+  }, []);
+  
     const handleClickButton = () =>
     {
 
@@ -93,9 +99,10 @@ function App() {
                     key={value.id}
                     listEmp={listEmployees} setListEmp={setListEmployees}
                     id={value.id}
-                    Nome={"Nome:" + value.Nome + " " + value.Sobrenome}           
-                    email={"Email:" + value.email}
-                    NIS={"PIS:" + value.NIS}> </Card>})}
+                    Nome={value.Nome}
+                    Sobrenome={value.Sobrenome}         
+                    email={value.email}
+                    NIS={value.NIS}> </Card>})}
 
       </div>
     </div>

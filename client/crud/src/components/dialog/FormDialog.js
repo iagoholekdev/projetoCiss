@@ -29,10 +29,11 @@ export default function FormDialog(props) {
   };
 
   const handleEditEmployee = () => {
+    debugger;
     Axios.put("http://localhost:8080/editEmployee", {
       id: editValues.id,
       Nome: editValues.Nome,
-      Sobrneome: editValues.Sobrenome,
+      Sobrenome: editValues.Sobrenome,
       email: editValues.email,
       NIS: editValues.NIS
     }).then(() => {
@@ -54,6 +55,7 @@ export default function FormDialog(props) {
   };
 
   const handleDeleteEmployee = () => {
+    debugger;
     Axios.delete(`http://localhost:8080/deleteEmployee/${editValues.id}`).then(() => {
       props.setListCard(
         props.listCard.filter((value) => {
@@ -98,7 +100,7 @@ export default function FormDialog(props) {
             id="Sobrenome"
             label="Sobrenome: "
             defaultValue={props.Sobrenome}
-            type="number"
+            type="text"
             onChange={handleChangeValues}
             fullWidth
           />
@@ -118,7 +120,7 @@ export default function FormDialog(props) {
             id="NIS"
             label="PIS: "
             defaultValue={props.NIS}
-            type="text"
+            type="number"
             onChange={handleChangeValues}
             fullWidth
           />

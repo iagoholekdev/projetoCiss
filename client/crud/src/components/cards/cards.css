@@ -1,3 +1,7 @@
 .employee-container{
     width: 250px;
 }
+
+.employee-container:hover{
+    background-color: aquamarine;
+}
