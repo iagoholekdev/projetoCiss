@@ -21,18 +21,17 @@ function App() {
 
   const handleGetButton = () => {
     Axios.get('http://localhost:8080/getEmployee').then((response) => {
-      console.log(response);
-      console.log(response.data)
       setListEmployees(response.data);
     })
   }
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/getCards").then((response) => {
-      setListEmployees(response.data);
-    });
-  }, []);
-  
+    Axios.get('http://localhost:8080/getEmployee').then((response) => {
+        setListEmployees(response.data)
+    })
+}, [listEmployees])
+
+
     const handleClickButton = () =>
     {
 
@@ -94,10 +93,11 @@ function App() {
           onClick={() => handleGetButton()}
          variant="primary">Consultar Funcionários</Button>{' '}
           {typeof listEmployees !== "undefined" &&
-          listEmployees.map((value) => { 
+          listEmployees.map((value) => {            
             return <Card 
                     key={value.id}
-                    listEmp={listEmployees} setListEmp={setListEmployees}
+                    listEmp={listEmployees} 
+                    setListEmp={setListEmployees}
                     id={value.id}
                     Nome={value.Nome}
                     Sobrenome={value.Sobrenome}         

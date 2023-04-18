@@ -15,7 +15,7 @@ export default function Card(props){
         email={props.email}
         NIS={props.NIS}
         listEmployee={props.listEmp}
-        setListEmp={props.setListEmployees}
+        setListEmp={props.setListEmp}
         id={props.id}
       />
         

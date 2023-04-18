@@ -51,14 +51,17 @@ app.put("/editEmployee", (req, res) => {
 
 });
 
-app.delete("deleteEmployee/:id", (req, res) =>{
-    const {id} = req.body;
-    let sql = "Delete from Funcionarios where id = ?"
-    database.query(sql, [id], (err, result) =>  {
-        if (err) console.log(err)
-        else res.send(result);
-    })
-})
+app.delete("/deleteEmployee/:id", (req, res) => {
+    const { id } = req.params;
+    let mysql = "DELETE FROM funcionario WHERE id = ?";
+    database.query(mysql, id, (err, result) => {
+      if (err) {
+        console.log(err);
+      } else {
+        res.send(result);
+      }
+    });
+  });
 
 app.listen(8080, () => {console.log("Server is running on port 8080")});
 

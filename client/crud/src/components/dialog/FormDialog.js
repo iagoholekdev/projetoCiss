@@ -37,8 +37,8 @@ export default function FormDialog(props) {
       email: editValues.email,
       NIS: editValues.NIS
     }).then(() => {
-      props.setListCard(
-        props.listCard.map((value) => {
+      props.SetListEmp(
+        props.listEmployee.map((value) => {
           return value.id == editValues.id
             ? {
                 id: editValues.id,
@@ -57,8 +57,8 @@ export default function FormDialog(props) {
   const handleDeleteEmployee = () => {
     debugger;
     Axios.delete(`http://localhost:8080/deleteEmployee/${editValues.id}`).then(() => {
-      props.setListCard(
-        props.listCard.filter((value) => {
+      props.SetListEmp(
+        props.listEmployee.filter((value) => {
           return value.id != editValues.id;
         })
       );
