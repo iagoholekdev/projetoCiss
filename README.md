@@ -9,9 +9,6 @@ Pensei em uma estrutura MVC (Model-view-Controller) com um DAO para realizar as 
 Consegui montar a estrutura com a idéia porém 5 dias e mais semana de prova não foi o bastante para a implementação de um CRUD completo, apesar
 da idéia ser bem simples, o front-end também acaba atrasando um pouco porém achei necessário fazer algo básico para que seja interativo.
 
-**Tive** a ideia de se caso eu passar no teste, dar continuidade a este projeto, caso a empresa ache que vai ser algo bom para mim
-e para ela, pois é adquirido um grande conhecimento fazendo esses sistemas back e front-end.
-
 
 obs: caso de erros de dependencias, rodar um **yarn install** em ambos os projetos. <br>
 **Para buildar o front:** <br>
